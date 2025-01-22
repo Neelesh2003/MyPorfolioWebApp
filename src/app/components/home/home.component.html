@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="homeContainer">
+    <div class="socialIcons" *ngIf="isMobile">
+      <div class="button fbBtn">
+        <div class="icon">
+          <i class="bx bxl-facebook" (click)="redirectToFB()"></i>
+        </div>
+        <span>GDD</span>
+      </div>
+      <div class="button linBtn">
+        <div class="icon" (click)="redirectToLinkdin()">
+          <i class="bx bxl-linkedin"></i>
+        </div>
+        <span>Linkedin</span>
+      </div>
+      <div class="button instaBtn">
+        <div class="icon">
+          <i class="bx bxl-instagram-alt" (click)="redirectToInsta()"></i>
+        </div>
+        <span>Instagram</span>
+      </div>
+      <div class="button gitBtn">
+        <div class="icon">
+          <i class="bx bxl-github" (click)="redirectToGithub()"></i>
+        </div>
+        <span>Github</span>
+      </div>
+      <div class="button youBtn">
+        <div class="icon">
+          <i class="bx bxl-youtube" (click)="redirectToYoutube()"></i>
+        </div>
+        <span>Youtube</span>
+      </div>
+    </div>
+
+    <div class="homeContent">
+      <!-- Image Added Here -->
+      <img src="assets/img/profile-pic (12).png" alt="Neelesh Gupta" class="professionalPic"/>
+
+      <h1
+        class="name"
+        data-aos="fade-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease forwards"
+        data-aos-offset="100"
+        data-aos-once="true"
+      >
+        Hey, I'm Neelesh Gupta
+      </h1>
+      <div class="info">
+        <p>
+          <strong>Welcome to my portfolio! I’m a final-year student passionate about Java Full Stack Development. I’m excited to apply my knowledge of Java and modern technologies to build scalable web applications.</strong>
+        </p>
+      </div>
+      <div class="btn">
+        <button (click)="redirectToProject()"><span></span> Projects</button>
+      </div>
+    </div>
+    
+    <div class="email" *ngIf="isMobile">
+      <a href="mailto:mrneel2024@gmail.com">mrneel2024@gmail.com</a>
+    </div>
+    <div class="scrollDown" (click)="redirectToAbout()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
